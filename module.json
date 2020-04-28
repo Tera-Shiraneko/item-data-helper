@@ -1,0 +1,17 @@
+{
+    "disableAutoUpdate": false,
+    "name": "Item Data Helper",
+    "author": "Shalltearz",
+    "description": "Tera Toolbox module which is retrieving item related data after moving your mouse on it.",
+    "options": {
+        "niceName": "Item Data Helper",
+        "guiName": "Item Data Helper",
+        "settingsVersion": 1,
+        "settingsFile": "./settings.json",
+        "settingsMigrator": "./Additional-Data/Module-Settings/settings_migrator.js",
+        "reloadable": true
+    },
+    "servers": ["https://raw.githubusercontent.com/Tera-Shiraneko/item-data-helper/master/"],
+    "supportUrl": "https://github.com/Tera-Shiraneko/item-data-helper/issues",
+    "donationUrl": "https://www.paypal.me/Shalltearz"
+}
