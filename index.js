@@ -5,14 +5,6 @@ const SettingsInterface = require('tera-mod-ui').Settings;
 const settingsStructure = require('./Additional-Data/Module-Settings/settings_structure.js');
 
 module.exports = function ItemDataHelper(mod) {
-
-    if (mod.proxyAuthor !== 'caali' || !mod.clientInterface) {
-        mod.warn('Pinkie Pie made a big mistake at the 25th April 2020 therefore I decided to drop every kind of support.');
-        mod.warn('You can now either use this module on Tera Toolbox or delete it.');
-        mod.warn('The latest version of Tera Toolbox can be downloaded from http://tiny.cc/tera-toolbox-installer.');
-        return;
-    }
-
     let userInterface = null;
 
     let itemData1 = {},
@@ -66,9 +58,9 @@ module.exports = function ItemDataHelper(mod) {
 
     mod.game.on('enter_game', checkConfigFile);
 
-    mod.hook('S_SHOW_ITEM_TOOLTIP', 14, handleItemData);
+    mod.hook('S_SHOW_ITEM_TOOLTIP', 15, handleItemData);
 
-    mod.hook('S_REPLY_NONDB_ITEM_INFO', 1, handleItemData);
+    mod.hook('S_REPLY_NONDB_ITEM_INFO', 2, handleItemData);
 
     mod.game.on('leave_game', leaveGameCleanup);
 
@@ -84,7 +76,7 @@ module.exports = function ItemDataHelper(mod) {
     }
 
     function handleItemData(event) {
-        const item = mod.game.data.items.get(event.id ? event.id : event.item);
+        const item = mod.game.data.items.get(event.id);
         if (mod.settings.message) {
             sendMessage('ffff00', `${item.name} with the item id ${item.id} retrieved.`);
         }
