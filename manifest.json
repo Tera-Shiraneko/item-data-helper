@@ -4,11 +4,11 @@
         "Additional-Data/Module-Settings/settings_migrator.js": "35e07967ab6a91fb8f9e6298f4c08d458eff7c5a2d299835bbe528a3ddb21c2b",
         "Additional-Data/Module-Settings/settings_structure.js": "079f000bdb65cf15be77a652b330af28094b419e8a31bb0e3ce44e2ce0fb5b15",
         "Readme.md": "ab15c362a8a2018917113698414cfdd2b73d8b5a3d758c05ccd5eab22cb08d02",
-        "index.js": "d24dd8ff6e21e58ab74c40ba693badac62d1a6d1a2abef999031b84a88d6efbb",
+        "index.js": "8ce67f052534ef2928e19b4405da6e2eadf11c0a6e8e7d29db22b0b3767aaf5c",
         "module.json": "3dfd141b525bdc299f76dc20b6eb059b726403bfade1c99fffea24efb69a3d9a"
     },
     "defs": {
         "S_REPLY_NONDB_ITEM_INFO": 2,
-        "S_SHOW_ITEM_TOOLTIP": 15
+        "S_SHOW_ITEM_TOOLTIP": 16
     }
 }

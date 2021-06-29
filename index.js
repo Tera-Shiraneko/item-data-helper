@@ -58,7 +58,7 @@ module.exports = function ItemDataHelper(mod) {
 
     mod.game.on('enter_game', checkConfigFile);
 
-    mod.hook('S_SHOW_ITEM_TOOLTIP', 15, handleItemData);
+    mod.hook('S_SHOW_ITEM_TOOLTIP', 16, handleItemData);
 
     mod.hook('S_REPLY_NONDB_ITEM_INFO', 2, handleItemData);
 
